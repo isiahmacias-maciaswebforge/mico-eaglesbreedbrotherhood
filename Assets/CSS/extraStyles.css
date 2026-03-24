@@ -1,9 +1,36 @@
 /* Extra Styles */
 
 
-/* Index styles */
-/* The explore and return to main site buttons */
-.indexBtns {
+/* Home Styles */
+/* Photo Gallery */
+.galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    max-width: 900px;
+    margin: auto;
+    padding: 5px;
+}
+
+/* Each Image in the gallery */
+.galleryGrid img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+/* Hovering over an image englargens and brightens it */
+.galleryGrid img:hover {
+    transform: scale(1.05);
+    filter: brightness(80%);
+}
+
+
+/* Other Global Styles */
+/* The Blue <a> Buttons */
+.blueBtns {
     display: inline-block;
     padding: 10px 20px;
     background: #007bff;
@@ -15,7 +42,19 @@
     margin-bottom: 2rem;
 }
 
-/* Hover affect on The explore and return to main site buttons */
-.indexBtns:hover {
+/* Hover affect on The Blue <a> Buttons */
+.blueBtns:hover {
     background-color: #0056b3;
+}
+
+/* Styling the links inside The Blue <a> Buttons */
+.centerTextBox a.blueBtns {
+  color: white;
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* Hover affect on the links inside The Blue <a> Buttons */
+.centerTextBox a.blueBtn:hover {
+  color: white;
 }
