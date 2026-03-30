@@ -89,3 +89,44 @@
 .eventFlyer img:hover {
     transform: scale(1.8);
 }
+
+
+/* Get Involved Styles */
+/* The container for support shirt section */
+.supportShirtDisplay {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 10px;
+}
+
+/* The Shirt's Picture */
+.shirtPic img {
+    flex: 1;
+    padding: 5px;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+/* Hover effect for The Shirt's Picture*/
+.shirtPic img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.25);
+}
+
+/* Prices textbox */
+.supportShirtDisplay .centerTextBox {
+    flex: 1;
+    padding: 5px;
+    width: 100%; 
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    font-size: 2.5rem;
+}
